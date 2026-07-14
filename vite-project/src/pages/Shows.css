@@ -1,0 +1,20 @@
+.shows-page__intro {
+  color: var(--cream-dim);
+  max-width: 56ch;
+}
+
+.shows-page__status {
+  color: var(--cream-dim);
+  font-style: italic;
+}
+
+.shows-page__status--error {
+  color: var(--gold-light);
+}
+
+.shows-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 760px;
+}

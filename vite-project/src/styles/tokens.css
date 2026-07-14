@@ -1,0 +1,45 @@
+:root {
+  --forest: #0f1a0b;
+  --forest-deep: #080d06;
+  --panel: #131f0e;
+  --panel-2: #172812;
+  --cream: #f4eedc;
+  --cream-dim: #c9c2aa;
+  --gold: #c9a24c;
+  --gold-light: #e3c878;
+  --brown: #5c4327;
+  --brown-light: #8a6b44;
+  --green: #5a7a3c;
+  --green-light: #8fae64;
+  --line: rgba(244, 238, 220, 0.22);
+
+  /* Gig Gazette sub-brand only — do not use elsewhere */
+  --gg-navy: #0a0d1c;
+  --gg-navy-2: #12162b;
+  --gg-neon: #f5b02e;
+  --gg-neon-2: #ff7a1a;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Work Sans", system-ui, sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --card-radius: 10px 12px 9px 13px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
