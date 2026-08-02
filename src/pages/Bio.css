@@ -71,7 +71,13 @@
   .bio-page__portrait {
     position: static;
     order: -1;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .bio-page__portrait-img {
+    height: auto;
+    object-fit: contain;
   }
 }
 

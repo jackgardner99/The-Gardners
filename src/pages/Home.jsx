@@ -14,6 +14,12 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <img
+          src="/images/home/homephoto.JPG"
+          alt=""
+          className="hero__photo"
+          aria-hidden="true"
+        />
         <div className="container hero__inner">
           <span className="eyebrow">Rustic folk-rock, made by hand</span>
           <h1 className="hero__title">The Gardners</h1>
