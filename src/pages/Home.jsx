@@ -25,9 +25,6 @@ export default function Home() {
             <Link to="/shows" className="btn btn-primary">
               See upcoming shows
             </Link>
-            <Link to="/shop" className="btn btn-outline">
-              Shop merch & fan packs
-            </Link>
           </div>
         </div>
       </section>

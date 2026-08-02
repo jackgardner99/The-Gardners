@@ -4,7 +4,6 @@ import './Footer.css'
 const LINKS = [
   { to: '/', label: 'Home' },
   { to: '/shows', label: 'Shows' },
-  { to: '/shop', label: 'Shop & Fan Packs' },
   { to: '/bio', label: 'Bio' },
   { to: '/gig-gazette', label: 'Gig Gazette' },
 ]
