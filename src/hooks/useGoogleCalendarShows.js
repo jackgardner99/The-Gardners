@@ -26,6 +26,7 @@ function mapEventToShow(event) {
     venue,
     city,
     date: event.start?.dateTime || event.start?.date,
+    hasTime: Boolean(event.start?.dateTime),
     ticketUrl: extractTicketUrl(event.description),
   }
 }

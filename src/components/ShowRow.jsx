@@ -30,10 +30,16 @@ export default function ShowRow({ show }) {
 
       <div className="show-row__details">
         <h3 className="show-row__venue">{show.venue}</h3>
-        {show.city && <p className="show-row__city">{show.city}</p>}
+        {(show.city || (show.hasTime && time)) && (
+          <p className="show-row__city">
+            {show.city}
+            {show.city && show.hasTime && time ? ' · ' : ''}
+            {show.hasTime ? time : ''}
+          </p>
+        )}
         <p className="show-row__datetime visually-hidden">
           {full}
-          {time ? ` at ${time}` : ''}
+          {show.hasTime && time ? ` at ${time}` : ''}
         </p>
       </div>
 
