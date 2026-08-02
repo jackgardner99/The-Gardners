@@ -2,6 +2,24 @@
   display: flex;
   align-items: center;
   gap: var(--space-md);
+  animation: show-row-pop-in 0.5s ease both;
+}
+
+@keyframes show-row-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .show-row {
+    animation: none;
+  }
 }
 
 .show-row__date {

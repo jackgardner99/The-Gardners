@@ -17,11 +17,11 @@ function formatDate(dateString) {
   }
 }
 
-export default function ShowRow({ show }) {
+export default function ShowRow({ show, index = 0 }) {
   const { day, month, weekday, full, time } = formatDate(show.date)
 
   return (
-    <li className="show-row card">
+    <li className="show-row card" style={{ animationDelay: `${Math.min(index, 10) * 60}ms` }}>
       <div className="show-row__date" aria-hidden="true">
         <span className="show-row__weekday">{weekday}</span>
         <span className="show-row__day">{day}</span>
