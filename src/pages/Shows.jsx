@@ -35,8 +35,8 @@ export default function Shows() {
 
         {!loading && !error && shows.length > 0 && (
           <ul className="shows-page__list">
-            {shows.map((show) => (
-              <ShowRow key={show.id} show={show} />
+            {shows.map((show, index) => (
+              <ShowRow key={show.id} show={show} index={index} />
             ))}
           </ul>
         )}

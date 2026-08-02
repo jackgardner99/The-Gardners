@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AlbumCard from '../components/AlbumCard'
 import VideoCard from '../components/VideoCard'
@@ -6,6 +7,7 @@ import videos from '../data/videos.json'
 import './Home.css'
 
 export default function Home() {
+  const [heroPhotoLoaded, setHeroPhotoLoaded] = useState(false)
   const sortedReleases = [...releases].sort(
     (a, b) => new Date(b.releaseDate) - new Date(a.releaseDate),
   )
@@ -17,8 +19,9 @@ export default function Home() {
         <img
           src="/images/home/homephoto.JPG"
           alt=""
-          className="hero__photo"
+          className={`hero__photo ${heroPhotoLoaded ? 'is-loaded' : ''}`}
           aria-hidden="true"
+          onLoad={() => setHeroPhotoLoaded(true)}
         />
         <div className="container hero__inner">
           <span className="eyebrow">Rustic folk-rock, made by hand</span>
