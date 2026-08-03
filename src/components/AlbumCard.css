@@ -8,6 +8,24 @@
   flex-direction: row;
   align-items: center;
   gap: var(--space-md);
+  animation: album-card-fade-in 0.45s ease;
+}
+
+@keyframes album-card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .album-card--featured {
+    animation: none;
+  }
 }
 
 .album-card__cover {
@@ -95,4 +113,60 @@
   .album-card--featured .album-card__cover {
     width: 100%;
   }
+}
+
+.album-card--catalog {
+  padding: 0;
+  overflow: hidden;
+}
+
+.album-card__select {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: inherit;
+}
+
+.album-card--catalog .album-card__title {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.album-card--catalog .album-card__year {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.album-card__select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+}
+
+.album-card--catalog .album-card__cover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.album-card__select:hover .album-card__cover {
+  transform: translateY(-3px);
+}
+
+.album-card--catalog.is-selected .album-card__cover {
+  box-shadow: 0 0 0 3px var(--gold);
+}
+
+.album-card__selected-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cream-dim);
+}
+
+.album-card--catalog.is-selected .album-card__selected-badge {
+  color: var(--gold-light);
 }
