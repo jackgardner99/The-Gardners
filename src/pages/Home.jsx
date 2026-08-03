@@ -11,7 +11,8 @@ export default function Home() {
   const sortedReleases = [...releases].sort(
     (a, b) => new Date(b.releaseDate) - new Date(a.releaseDate),
   )
-  const latestRelease = sortedReleases[0]
+  const [selectedId, setSelectedId] = useState(sortedReleases[0]?.id)
+  const selectedAlbum = sortedReleases.find((release) => release.id === selectedId) ?? sortedReleases[0]
 
   return (
     <>
@@ -38,15 +39,15 @@ export default function Home() {
         </div>
       </section>
 
-      {latestRelease && (
+      {selectedAlbum && (
         <section className="section new-album">
           <div className="container">
             <div className="section-head">
-              <span className="eyebrow eyebrow--alt">Fresh off the porch</span>
-              <h2>New album</h2>
+              <span className="eyebrow eyebrow--alt">Now playing</span>
+              <h2>Selected album</h2>
             </div>
             <ul className="new-album__module">
-              <AlbumCard release={latestRelease} featured />
+              <AlbumCard key={selectedAlbum.id} release={selectedAlbum} featured />
             </ul>
           </div>
         </section>
@@ -58,9 +59,15 @@ export default function Home() {
             <span className="eyebrow">The whole shed</span>
             <h2>Albums</h2>
           </div>
-          <ul className="grid grid--3">
+          <ul className="grid grid--catalog">
             {sortedReleases.map((release) => (
-              <AlbumCard key={release.id} release={release} />
+              <AlbumCard
+                key={release.id}
+                release={release}
+                catalog
+                selected={release.id === selectedAlbum?.id}
+                onSelect={(picked) => setSelectedId(picked.id)}
+              />
             ))}
           </ul>
         </div>

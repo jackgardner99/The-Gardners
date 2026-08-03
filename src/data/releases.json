@@ -1,6 +1,6 @@
 [
   {
-    "id": "porchlight-2025",
+    "id": "1",
     "title": "Snippets: Volume 1",
     "coverImage": "/images/releases/snippets.png",
     "releaseDate": "2025-09-12",
@@ -9,6 +9,18 @@
       "appleMusic": "https://music.apple.com/us/album/snippets-volume-i/1886142203",
       "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_lkdms2rJkD4mBjtOUv3RuJiZjjYzSEJHo&si=JOTv7i0Fh8jnvzPC",
       "amazonMusic": "https://music.amazon.com/albums/B0H6CRXRXY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_1xh62Jfryd1Jn65qFBmKVVsp8"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Run Between The Rain",
+    "coverImage": "/images/releases/runbetweentherain.JPEG",
+    "releaseDate": "2025-07-27",
+    "links": {
+      "spotify": "https://open.spotify.com/album/5rNCdWl7lQbpMcX6HDpXvB?si=AT1wl5A7QEOeSnlTC7T9vQ",
+      "appleMusic": "https://music.apple.com/us/album/run-between-the-rain/1828359645",
+      "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_lDVQkwuKFbraSe2rLJH-MYbyHo0Yf5hSA",
+      "amazonMusic": "https://music.amazon.com/albums/B0FJF7VDLL"
     }
   }
 ]
