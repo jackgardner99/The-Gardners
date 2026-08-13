@@ -47,8 +47,8 @@ export default function Bio() {
                 <p>
                   Jack and Kadi met in Nashville at an open mic night, subconsciously knowing the future they were about to embark
                   with each other. They spent a couple years not only enjoying the company of each other, but have been constantly
-                  researching the truth behind living the highest form of life, love, and happiness. They got engaged on July 3rd, 2026, at
-                  their new home in Hendersonville, Tennessee, looking to find more wisdom to life's most difficult questions.
+                  researching the truth behind living the highest form of life, love, and happiness. They got engaged on July 3rd, 2026, 
+                  and are looking to find more wisdom to life's most difficult questions.
                 </p>
                 <p>
                   The Gardners EPK is the first product of Jack and Kadi's blended musicianship and time together, recorded at Blue House Studios,
