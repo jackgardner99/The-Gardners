@@ -21,7 +21,7 @@ const SOCIALS = [
   },
   {
     label: 'YouTube',
-    href: 'https://youtube.com/@thegardnersband',
+    href: 'https://www.youtube.com/@TheGardnersMusic',
     path: 'M21.6 7.6a2.7 2.7 0 00-1.9-1.9C18 5.2 12 5.2 12 5.2s-6 0-7.7.5A2.7 2.7 0 002.4 7.6 28 28 0 002 12a28 28 0 00.4 4.4 2.7 2.7 0 001.9 1.9c1.7.5 7.7.5 7.7.5s6 0 7.7-.5a2.7 2.7 0 001.9-1.9A28 28 0 0022 12a28 28 0 00-.4-4.4zM10 15.2V8.8L15.8 12z',
   },
   {
