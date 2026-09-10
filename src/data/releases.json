@@ -22,5 +22,17 @@
       "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_lDVQkwuKFbraSe2rLJH-MYbyHo0Yf5hSA",
       "amazonMusic": "https://music.amazon.com/albums/B0FJF7VDLL"
     }
+  },
+  {
+    "id": "3",
+    "title": "Lose My Limit",
+    "coverImage": "/images/releases/thegardners.jpg",
+    "releaseDate": "2026-09-06",
+    "links": {
+      "spotify": "https://open.spotify.com/album/21i3A77JWlytgjoHgRlmGd?si=iLlCniGuRJ-lBCtxRqIq6Q",
+      "appleMusic": "https://music.apple.com/us/album/lose-my-limit-single/6800545286",
+      "youtubeMusic": " ",
+      "amazonMusic": "https://amazon.com/music/player/albums/B0HDWQ3FCQ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_VHbgIpCBHMzpw9nM8OohTIX4E"
+    }
   }
 ]
