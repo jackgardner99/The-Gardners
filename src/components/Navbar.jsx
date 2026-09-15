@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className={`navbar ${isGazette ? 'gig-gazette' : ''}`}>
       <div className="container navbar__inner">
         <NavLink to="/" className="navbar__logo" aria-label="The Gardners — Home">
-          The Gardners
+          <img src="/images/brand/logo.png" alt="The Gardners" className="navbar__logo-img" />
         </NavLink>
 
         <button
