@@ -40,7 +40,7 @@ export default function Footer() {
     <footer className={`footer ${isGazette ? 'gig-gazette' : ''}`}>
       <div className="container footer__inner">
         <div className="footer__brand">
-          <span className="footer__wordmark">The Gardners</span>
+          <img src="/images/brand/logo.png" alt="The Gardners" className="footer__wordmark" />
           <p className="footer__tag">Rustic folk-rock, made by hand.</p>
         </div>
 
