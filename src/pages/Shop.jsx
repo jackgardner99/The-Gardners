@@ -28,6 +28,7 @@ export default function Shop() {
 
   return (
     <>
+      {/*
       <section className="section fan-packs">
         <div className="container">
           <div className="section-head">
@@ -59,12 +60,13 @@ export default function Shop() {
       </section>
 
       <hr className="stitch container" />
+      */}
 
       <section className="section shop-page">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow eyebrow--alt">Take a piece home</span>
-            <h2>Shop</h2>
+            <h1>Shop</h1>
             <p className="shop-page__intro">Merch, straight from the merch table to your door.</p>
           </div>
 
