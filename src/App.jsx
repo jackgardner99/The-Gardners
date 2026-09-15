@@ -38,7 +38,7 @@ function App() {
             path="*"
             element={
               <section className="section container">
-                <h1>Page not found</h1>
+                <h1>Page not found.</h1>
                 <p>That page wandered off. Try one of the links above.</p>
               </section>
             }
