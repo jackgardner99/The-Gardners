@@ -14,8 +14,9 @@ export default function ProductCard({ product }) {
       <h3 className="product-card__title">{title}</h3>
       {price && (
         <p className="product-card__price">
+          {/t-?shirt/i.test(title) && 'Starting at '}
           {currency === 'USD' || !currency ? '$' : `${currency} `}
-          {price}
+          {Number(price).toFixed(2)}
         </p>
       )}
 
