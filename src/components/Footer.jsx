@@ -71,6 +71,12 @@ export default function Footer() {
 
       <div className="container footer__bottom">
         <p>&copy; {year} The Gardners. All rights reserved.</p>
+        <p className="footer__credit">
+          Built by{' '}
+          <a href="https://gardnersolutions.co/" target="_blank" rel="noreferrer noopener">
+            Gardner Solutions
+          </a>
+        </p>
       </div>
     </footer>
   )
