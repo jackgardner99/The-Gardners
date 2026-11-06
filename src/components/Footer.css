@@ -79,6 +79,25 @@
   text-align: center;
 }
 
+.footer__credit {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.footer__credit a {
+  color: var(--cream-dim);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer__credit a:hover {
+  color: var(--gold-light);
+}
+
+.footer.gig-gazette .footer__credit a:hover {
+  color: var(--gg-neon);
+}
+
 @media (max-width: 760px) {
   .footer__inner {
     grid-template-columns: 1fr;
